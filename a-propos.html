@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — À propos</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <div class="bg-overlay" aria-hidden="true"></div>
+    <img class="bg-logo-float" src="./logo_MARL.png" alt="" aria-hidden="true" />
+    <header class="header">
+        <div class="container nav">
+            <a class="brand brand-home" href="index.html">
+                <img class="logo logo-home" src="assets/logo_MARL.png" alt="Logo MARL" />
+                <span class="brand-home-title">
+                    <span class="brand-home-line">Portfolio de Mathis</span>
+                    <span class="brand-home-line">Lauret Pouvreau</span>
+                </span>
+            </a>
+
+            <nav class="menu" aria-label="Navigation">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="bts-sio.html">BTS SIO</a>
+                <a href="entreprise.html">Entreprise</a>
+                <a href="synthese.html">Synthèse</a>
+                <a href="certification.html">Certification</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <div class="container">
+            <section class="card page-header">
+                <h1>À propos de moi</h1>
+            </section>
+
+            <section class="content">
+                <div class="card block">
+                    <h2>Présentation</h2>
+                    <p>
+                        Étudiant en BTS SIO option SISR en alternance au lycée Gustave Eiffel, je me forme aux métiers
+                        de l’infrastructure, des réseaux et de la cybersécurité. Au cours de mon BTS, j’ai développé
+                        des compétences en administration systèmes et réseaux, en gestion d’équipements informatiques,
+                        en sécurisation des environnements et en support aux utilisateurs. Ce portfolio présente mon
+                        parcours, les compétences que j’ai acquises ainsi que les expériences et projets qui ont
+                        contribué à construire mon profil professionnel.
+                    </p>
+                </div>
+
+                <aside class="card block">
+                    <h2>Infos rapides</h2>
+                    <div class="placeholder">
+                        BTS SIO option SISR en alternance<br />
+                        Lycée Gustave Eiffel<br />
+                        Entreprise : MARL Digital Services<br />
+                        Systèmes • Réseaux • Cybersécurité<br />
+                        Linux • Support • Maintenance • Infrastructure<br />
+                        Autonomie • Sérieux • Esprit d’équipe
+                    </div>
+                    <a
+                        class="linkedin-link"
+                        href="https://www.linkedin.com/in/mathis-lauret-pouvreau-46a190355/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Profil LinkedIn de Mathis Lauret-Pouvreau"
+                    >
+                        <img class="linkedin-logo" src="assets/logo_linkedin.png" alt="LinkedIn" />
+                    </a>
+                </aside>
+            </section>
+
+            <section class="card block cv-section">
+                <h2>Mon CV</h2>
+                <p class="cv-text">Aperçu de mon CV :</p>
+                <iframe
+                    class="cv-preview"
+                    src="assets/CV_Mathis_Lauret--Pouvreau.pdf#view=FitH"
+                    title="CV de Mathis Lauret-Pouvreau"
+                ></iframe>
+                <a class="btn primary" href="assets/CV_Mathis_Lauret--Pouvreau.pdf" target="_blank" rel="noopener noreferrer">Ouvrir le CV</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container row">
+            <span>© <span id="year"></span> — Portfolio</span>
+            <span>
+                <a href="index.html">Accueil</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

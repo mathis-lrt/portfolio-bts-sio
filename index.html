@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Accueil</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home">
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <div class="bg-overlay" aria-hidden="true"></div>
+    <img class="bg-logo-float" src="./logo_MARL.png" alt="" aria-hidden="true" />
+
+    <header class="header">
+        <div class="container nav">
+            <a class="brand brand-home" href="index.html">
+                <img class="logo logo-home" src="assets/logo_MARL.png" alt="Logo MARL" />
+                <span class="brand-home-title">
+                    <span class="brand-home-line">Portfolio de Mathis</span>
+                    <span class="brand-home-line">Lauret Pouvreau</span>
+                </span>
+            </a>
+
+            <nav class="menu" aria-label="Navigation">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="bts-sio.html">BTS SIO</a>
+                <a href="entreprise.html">Entreprise</a>
+                <a href="synthese.html">Synthèse</a>
+                <a href="certification.html">Certification</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <section class="home-hero">
+            <div class="container home-hero-grid">
+                <div class="home-hero-main">
+                    <p class="home-kicker">Portfolio BTS SIO</p>
+                    <h1>Portfolio de Mathis Lauret Pouvreau</h1>
+
+                    <div class="actions">
+                        <a class="btn primary" href="a-propos.html">Découvrir mon profil</a>
+                        <a class="btn ghost" href="synthese.html">Accéder à la synthèse</a>
+                    </div>
+                </div>
+
+                <aside class="home-side card">
+                    <h2>Repères rapides</h2>
+                    <ul>
+                        <li><b>Formation :</b> BTS SIO</li>
+                        <li><b>Option :</b> SISR</li>
+                        <li><b>Lieu formation :</b> Lycée Gustave Eiffel</li>
+                        <li><b>Entreprise :</b> MARL Digital Services</li>
+                    </ul>
+                    <a class="btn ghost" href="assets/CV_Mathis_Lauret--Pouvreau.pdf" target="_blank" rel="noopener noreferrer">Voir mon CV</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="home-links">
+            <div class="container">
+                <div class="home-cards">
+                    <a class="home-card card" href="bts-sio.html">
+                        <span class="badge">BTS SIO</span>
+                        <h3>Formation & compétences</h3>
+                        <p>Retrouvez l’option, les technologies et les compétences mobilisées.</p>
+                    </a>
+
+                    <a class="home-card card" href="entreprise.html">
+                        <span class="badge">Entreprise</span>
+                        <h3>Missions professionnelles</h3>
+                        <p>Contexte, objectifs, outils utilisés et résultats obtenus en entreprise.</p>
+                    </a>
+
+                    <a class="home-card card" href="certification.html">
+                        <span class="badge">Certifications</span>
+                        <h3>Badges & attestations</h3>
+                        <p>Preuves de compétences, dates et organismes certificateurs.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container row">
+            <span>© <span id="year"></span> — Portfolio</span>
+            <span>
+                <a href="a-propos.html">À propos</a> ·
+                <a href="certification.html">Certifications</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
