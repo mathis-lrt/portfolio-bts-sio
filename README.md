@@ -2,5 +2,5 @@
 
 
 restant a faire : 
-- rajouter le tableaud de synthese
-- realisations professionels (tout les projets fait en cour)
+- push les derniere modif du portfolio
+  
