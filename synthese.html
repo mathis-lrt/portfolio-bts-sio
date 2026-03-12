@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Synthèse</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <div class="bg-overlay" aria-hidden="true"></div>
+    <img class="bg-logo-float" src="./logo_MARL.png" alt="" aria-hidden="true" />
+    <header class="header">
+        <div class="container nav">
+            <a class="brand brand-home" href="index.html">
+                <img class="logo logo-home" src="assets/logo_MARL.png" alt="Logo MARL" />
+                <span class="brand-home-title">
+                    <span class="brand-home-line">Portfolio de Mathis</span>
+                    <span class="brand-home-line">Lauret Pouvreau</span>
+                </span>
+            </a>
+
+            <nav class="menu" aria-label="Navigation">
+                <a href="index.html#accueil">Accueil</a>
+                <a href="index.html#a-propos">À propos</a>
+                <a href="index.html#bts-sio">BTS SIO</a>
+                <a href="index.html#entreprise">Entreprise</a>
+                <a href="index.html#realisations">Réalisations pro</a>
+                <a href="index.html#synthese">Synthèse</a>
+                <a href="index.html#certification">Certification</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <div class="container">
+            <section class="card page-header">
+                <h1>Synthèse</h1>
+                <p>Centralise compétences, projets et preuves.</p>
+            </section>
+
+            <section class="content">
+                <div class="card block">
+                    <h2>Tableau de synthèse</h2>
+                    <p class="cv-text">Aperçu du tableau de synthèse :</p>
+                    <iframe
+                        class="synthese-preview"
+                        src="assets/tableau_synthese.pdf#view=FitH"
+                        title="Tableau de synthèse"
+                    ></iframe>
+                    <a class="btn primary" href="assets/tableau_synthese.pdf" target="_blank" rel="noopener noreferrer">Ouvrir le tableau</a>
+                </div>
+
+                <aside class="card block">
+                    <h2>Liens rapides</h2>
+                    <div class="placeholder">
+                        À remplir : GitHub, Drive, docs, annexes.
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container row">
+            <span>© <span id="year"></span> — Portfolio</span>
+            <span>
+                <a href="index.html">Accueil</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

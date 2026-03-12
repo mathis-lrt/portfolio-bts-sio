@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Réalisations professionnelles</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <div class="bg-overlay" aria-hidden="true"></div>
+    <img class="bg-logo-float" src="./logo_MARL.png" alt="" aria-hidden="true" />
+    <header class="header">
+        <div class="container nav">
+            <a class="brand brand-home" href="index.html">
+                <img class="logo logo-home" src="assets/logo_MARL.png" alt="Logo MARL" />
+                <span class="brand-home-title">
+                    <span class="brand-home-line">Portfolio de Mathis</span>
+                    <span class="brand-home-line">Lauret Pouvreau</span>
+                </span>
+            </a>
+
+            <nav class="menu" aria-label="Navigation">
+                <a href="index.html#accueil">Accueil</a>
+                <a href="index.html#a-propos">À propos</a>
+                <a href="index.html#bts-sio">BTS SIO</a>
+                <a href="index.html#entreprise">Entreprise</a>
+                <a href="index.html#realisations">Réalisations pro</a>
+                <a href="index.html#synthese">Synthèse</a>
+                <a href="index.html#certification">Certification</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <div class="container">
+            <section class="card page-header">
+                <h1>Réalisations professionnelles</h1>
+            </section>
+
+            <section class="content">
+                <div class="card block">
+                    <h2>Projets réalisés en cours</h2>
+                    <p>
+                        Cet espace regroupe les projets, travaux pratiques et réalisations effectués pendant
+                        la formation au BTS SIO.
+                    </p>
+                    <a class="project-link" href="#projets-cours">- AP Réservator</a>
+                </div>
+
+                <aside class="card block">
+                    <h2>Réalisations pro en entreprise</h2>
+                    <p>
+                        Cette partie est dédiée aux interventions, projets et actions menés dans le cadre de
+                        l'entreprise.
+                    </p>
+                    <a class="project-link" href="#projets-entreprise">- Comparatif des solutions de supervision</a>
+                </aside>
+            </section>
+
+            <section class="card block project-resources" id="projets-cours">
+                <h2>Projets réalisés en cours</h2>
+                <p>
+                    Cette zone peut contenir les projets menés pendant la formation : travaux pratiques,
+                    projets techniques, ateliers, scripts, documentations et preuves associées.
+                </p>
+                <h3>AP Réservator</h3>
+                <a class="project-link" href="assets/DOCUMENTATION AUDIT DU RESEAU DORSAL.docx" target="_blank" rel="noopener noreferrer">- DOCUMENTATION AUDIT DU RESEAU DORSAL.docx</a>
+            </section>
+
+            <section class="card block project-resources" id="projets-entreprise">
+                <h2>Projets réalisés en entreprise</h2>
+                <p>
+                    Cette zone peut contenir les actions et réalisations effectuées en entreprise : support,
+                    déploiements, interventions techniques, procédures, améliorations et résultats obtenus.
+                </p>
+                <h3>Comparatif des solutions de supervision</h3>
+                <a class="project-link" href="assets/Prometheus_shema_des flux_+_archi_physique.drawio.png" target="_blank" rel="noopener noreferrer">- Prometheus_shema_des flux_+_archi_physique.drawio.png</a>
+                <br />
+                <a class="project-link" href="assets/Présentation solution de Supervision.pdf" target="_blank" rel="noopener noreferrer">- Présentation solution de Supervision.pdf</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container row">
+            <span>© <span id="year"></span> — Portfolio</span>
+            <span>
+                <a href="index.html">Accueil</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
