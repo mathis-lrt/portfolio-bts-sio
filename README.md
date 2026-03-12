@@ -2,5 +2,4 @@
 
 
 restant a faire : 
-- push les derniere modif du portfolio
-  
+- rajouter une fonctionnalité pour que le menu de navigation reste "colle" même pendant le scrool 
