@@ -824,41 +824,57 @@ h1 {
 }
 
 .realisation-item summary {
-  position: relative;
-  padding: 18px 54px 18px 20px;
+  padding: 16px 18px 16px 20px;
   cursor: pointer;
   list-style: none;
-  font-weight: 850;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(14, 165, 163, .11), rgba(59, 130, 246, .07));
   color: var(--text);
-  text-decoration: underline;
-  text-decoration-color: rgba(14, 165, 163, .25);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+  transition: background .2s ease, color .2s ease;
 }
 
 .realisation-item summary::-webkit-details-marker {
   display: none;
 }
 
-.realisation-item summary::after {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  width: 26px;
-  height: 26px;
-  display: grid;
-  place-items: center;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  background: rgba(14, 165, 163, .12);
-  color: var(--primary-dark);
-  font-size: 1.2rem;
-  line-height: 1;
+.realisation-item summary:hover {
+  background: linear-gradient(135deg, rgba(14, 165, 163, .18), rgba(59, 130, 246, .11));
 }
 
-.realisation-item[open] summary::after {
-  content: "−";
+.realisation-name {
+  font-size: 1.04rem;
+  font-weight: 850;
+  text-decoration: underline;
+  text-decoration-color: rgba(14, 165, 163, .38);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.realisation-cta {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: var(--primary-dark);
+  color: #fff;
+  font-size: .84rem;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(11, 124, 122, .18);
+}
+
+.realisation-arrow {
+  display: inline-block;
+  font-size: 1rem;
+  transition: transform .2s ease;
+}
+
+.realisation-item[open] .realisation-arrow {
+  transform: rotate(180deg);
 }
 
 .realisation-resources {
@@ -884,6 +900,17 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   .realisation-resources {
     animation: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .realisation-item summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .realisation-cta {
+    align-self: flex-start;
   }
 }
 
