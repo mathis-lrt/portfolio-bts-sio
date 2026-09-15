@@ -62,6 +62,16 @@
     addRevealGroup(".project-resources", "reveal-soft", 120, 90);
     addRevealGroup(".resources-column", "reveal-soft", 140, 80);
 
+    const realisationItems = [...document.querySelectorAll(".realisation-item")];
+    realisationItems.forEach(item => {
+        item.addEventListener("toggle", () => {
+            if (!item.open) return;
+            realisationItems.forEach(otherItem => {
+                if (otherItem !== item) otherItem.open = false;
+            });
+        });
+    });
+
     document.querySelectorAll(".block h2, .page-header h1").forEach((heading, index) => {
         heading.classList.add("reveal", "reveal-soft", "reveal-stagger");
         heading.style.setProperty("--reveal-delay", `${40 + (index % 3) * 50}ms`);
